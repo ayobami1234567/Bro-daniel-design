@@ -1,0 +1,94 @@
+/* @import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800"); */
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Muli', 'Arial';
+  height: 100vh;
+  margin: 10px;
+  background-image: linear-gradient(147deg, #FFE53B 0%, #fd3838 74%);
+}
+
+.container {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  overflow: hidden;
+  width: 60%;
+  height: 65vh;
+}
+
+.image img {
+  background: #ed474a;
+  color: #fff;
+  float: left;
+  /* padding: 5px; */
+  width: 40%;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center;
+}
+
+.progress-page {
+  float: left;
+  padding: 30px;
+  position: relative;
+  width: 60%;
+}
+
+.container-progress {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem 0;
+}
+
+@media screen and (max-width: 740px) {
+
+  body {
+    background: #fff;
+  }
+
+
+  .container {
+    width: 500px;
+    height: 550px;
+  }
+
+  .progress-page,
+  .image img {
+    width: 100%;
+    height: 300px;
+    float: none;
+  }
+
+  .image {
+    height: 55%;
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+    padding: 10px;
+    /* background: #ed474a; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(147deg, #FFE53B 0%, #fd3838 74%);
+    font-family: "Fira Sans", sans-serif;
+  }
+
+  .image img {
+    object-fit: cover;
+    object-position: center;
+    width: 78%;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 3px solid #fff;
+  }
+}
